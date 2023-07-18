@@ -1,0 +1,20 @@
+print("Enter the String: ")
+text = input()
+
+chk = 0
+countWord = 0
+textLen = len(text)
+
+for i in range(textLen):
+    if text[i]==' ':
+        if chk!=0:
+            countWord = countWord+1
+        chk = 0
+    else:
+        chk = chk+1
+
+if chk!=0:
+    countWord = countWord+1
+
+print("\nNumber of Word(s): ")
+print(countWord)
