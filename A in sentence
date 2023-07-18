@@ -1,0 +1,10 @@
+def count_letter_A(sentence):
+    count = 0
+    for char in sentence:
+        if char == "A" or char == "a":
+            count += 1
+    return count
+
+sentence = input("Enter a sentence: ")
+letter_A_count = count_letter_A(sentence)
+print("Number of 'A' occurrences:", letter_A_count)
