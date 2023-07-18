@@ -1,0 +1,7 @@
+def separate_sentence(sentence):
+    words = sentence.split(".")
+    return words
+
+sentence = input("Enter a sentence: ")
+separated_words = separate_sentence(sentence)
+print("Separated words:", separated_words)
